@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0F5E"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/rules_for_bonus_game"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/top_card_view"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Shake your phone to earn points"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coinImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:src="@drawable/img_coin_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules_for_bonus_game" />
+
+    <TextView
+        android:id="@+id/coinCountTextView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/coinImageView"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/corner_for_coin_img"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinImageView" />
+
+    <TextView
+        android:id="@+id/back_to_main_btn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back_start_game"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

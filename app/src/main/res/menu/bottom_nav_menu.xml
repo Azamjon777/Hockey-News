@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_bonus_coin"
+        android:icon="@drawable/ic_coin"
+        android:title="COINS"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector" />
+
+    <item
+        android:id="@+id/navigation_rules"
+        android:icon="@drawable/ic_rules"
+        android:title="RULES"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_games_home"
+        android:title="HOME"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector" />
+
+    <item
+        android:id="@+id/navigation_table"
+        android:icon="@drawable/ic_table"
+        android:title="TABLE"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector" />
+
+    <item
+        android:id="@+id/navigation_assistant"
+        android:icon="@drawable/ic_assistant"
+        android:title="ASSISTANT"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector" />
+</menu>

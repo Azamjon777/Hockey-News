@@ -1,0 +1,168 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0B8F4"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".presentation.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Timer: 20:00"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buttonSaveTeam1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/corner_for_result_texts2"
+            android:gravity="center"
+            android:onClick="saveTeam1Name"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team 2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buttonSaveTeam2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/corner_for_result_texts2"
+            android:gravity="center"
+            android:onClick="saveTeam2Name"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_assistant">
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Score: 0 - 0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buttonTeam1Score"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_for_result_texts3"
+                android:gravity="center"
+                android:onClick="incrementTeam2Score"
+                android:text="Goal!"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/buttonTeam2Score"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_for_result_texts1"
+                android:gravity="center"
+                android:onClick="incrementTeam1Score"
+                android:text="Goal!"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rules_assistant"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back_start_game"
+        android:gravity="center"
+        android:text="Rules"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll2_assistant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
